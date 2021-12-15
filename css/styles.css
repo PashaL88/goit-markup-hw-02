@@ -4,18 +4,23 @@
 /* белый #FFFFFF */
 /* цвет фона основной #E5E5E5 */
 /* цвет фона вторичный #FFFFFF #2F303A */
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --acent-color: #2196f3;
-  --white-color: #ffffff;
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
+  --secondary-bg-color: #2f303a;
+  --additional-bg-color: #f5f4fa;
 }
 body {
-  background-color: #e5e5e5;
+  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
+/* Header */
 .page-header {
-  background-color: var(--white-color);
+  background-color: var(--primary-white-color);
 }
 .logo {
   color: var(--acent-color);
@@ -31,11 +36,14 @@ ul {
   list-style: none;
 }
 /* Navigation */
-.site-nav a {
+.site-nav .link {
   color: var(--primary-text-color);
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent-color);
+}
+.site-nav .link.current {
   color: var(--acent-color);
 }
 .contacts a {
@@ -46,8 +54,11 @@ ul {
   color: var(--acent-color);
 }
 /* Hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
 .hero-title {
-  color: var(--white-color);
+  color: var(--primary-white-color);
 }
 /* What we do */
 .section-title {
@@ -60,9 +71,45 @@ ul {
   color: var(--secondary-text-color);
 }
 /* Team */
+.section-team {
+  background-color: var(--additional-bg-color);
+}
 .team-title {
   color: var(--primary-text-color);
 }
-.team .description {
+.team-description {
+  color: var(--secondary-text-color);
+}
+/* Footer */
+.page-footer {
+  background-color: var(--secondary-bg-color);
+}
+.logo-footer {
+  color: var(--primary-white-color);
+}
+.contacts-adress {
+  color: var(--primary-white-color);
+}
+/* Button */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--additional-bg-color);
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+}
+.button.secondary {
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+}
+/* Portfolio section*/
+.section-link .title {
+  color: var(--primary-text-color);
+}
+.section-link .description {
   color: var(--secondary-text-color);
 }
