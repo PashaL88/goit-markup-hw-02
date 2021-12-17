@@ -131,6 +131,8 @@ ul {
   color: var(--primary-white-color);
 }
 .contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -138,6 +140,7 @@ ul {
 .button {
   color: var(--primary-text-color);
   background-color: var(--additional-bg-color);
+  font-family: inherit;
   cursor: pointer;
   font-size: 16px;
   text-decoration: none;
@@ -145,7 +148,6 @@ ul {
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--acent-color);
-  font-family: inherit;
   font-weight: bold;
   line-height: 1.89;
   text-align: center;
